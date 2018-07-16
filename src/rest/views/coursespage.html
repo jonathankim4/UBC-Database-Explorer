@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./public/coursesstyle.css">
+	<script src="./public/jquery-3.2.0.min.js"></script>
+	<script src="./public/bootstrap.min.js""></script>
+	<script src="./public/bootstrap.min.css""></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<script src="./public/main_courses.js"></script>
+</head>
+<html>
+<body>
+
+<section>
+
+<div class="topnav" id="myTopnav">
+	<a href="javascript:history.back()">Go Back</a>
+  <a href="deezpage.html">Deez</a>
+</div>
+
+<h3>ERRMERGURRDD ITS A FISH </h3>
+
+<div id="container">
+	<h3>CHOOSE YOUR QUERY OPTIONS </h3>
+	<form id="queryForm">
+		<div class="form-group">
+			<label for="courseDept">Course Department</label>
+			<input type="text" class="form-group" id="courseDept">
+			<br>
+			<label for="courseNumber">Course Number</label>
+			<input type="text" class="form-group" id="courseNumber">
+			<br>
+			<label for="courseInstructor">Course Instructor</label>
+			<input type="text" class="form-group" id="courseInstructor"><br>
+			<label for="courseTitle">Course Title</label>
+			<input type="text" class="form-group" id="courseTitle">
+			<br>
+			<label for="courseSize">Course Size</label>
+			<input type="text" class="form-group" id="courseSize"> <br>
+
+			<div id = "orderdiv">
+			<p> Choose dat order option </p>
+			<input id = "none" type="checkbox" name="order"> None
+			<input id = "mostFail" type="checkbox" name="order"> Most Failing
+			<input id = "mostPass" type="checkbox" name="order"> Most Passing
+			<input id = "avgGrade" type="checkbox" name="order"> Average Grade <br>
+			<input id = "orderoption" type="checkbox" name="order"> Order yes<br>
+			<label for="customOrder">Custom Order</label>
+			<input type="text" class="form-group" id="customOrder"><br>
+			<input id = "up" type="radio" name="dir"> Ascending
+			<input id = "down" type="radio" name="dir"> Decsending
+			</div>
+
+		
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+<div id="render">
+      <h3>Result</h3>
+</div>
+
+
+</section>
+
+</body>
+</html>

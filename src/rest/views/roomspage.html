@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./public/roomsstyle.css">
+	<script src="./public/jquery-3.2.0.min.js"></script>
+	<script src="./public/bootstrap.min.js""></script>
+	<script src="./public/bootstrap.min.css""></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<script src="./public/main_rooms.js"></script>
+</head>
+<html>
+<body>
+
+<section>
+
+<div class="topnav" id="myTopnav">
+	<a href="javascript:history.back()">Go Back</a>
+  <a href="deezpage.html">Deez</a>
+</div>
+
+<div id="container">
+	<p style="text-align:left"> Boromir : <q> One does not simply walk into mordor. </q> </p>
+	<p style="text-align:left"> Some Other dude : <q> One does not simply dip his cookies into milk. </q> </p>
+	<p style="text-align:left"> Kyle Mooney : <q> I got some good bomb ass dank ass from up north, purpscurp. </q> </p>
+	<p style="text-align:left"> Kyle Mooney : <q> Thats some skunkunkkunkk dood</q> </p>
+	<p style="text-align:left"> Kyle Mooney : <q> katapolnia dood up the 15?</q> </p>
+	<h3>CHOOSE YOUR QUERY OPTIONS </h3>
+	<form id="queryForm">
+		<div class="form-group">
+			<label for="roomsInBuilding">Show all rooms in building name</label>
+			<select id='rooms_selecter'></select>​<br>
+
+			<label for="roomsFurniture">Show rooms with furniture or room type of the building</label>
+			<select id='furnitureselect'></select>​ <select id='typeselect'></select>​<br>
+
+			<label for="roomsNumber">Show all rooms with this rooms number</label>
+			<input type="text" class="form-group" id="roomsNumber"><br>
+
+			<label for="roomsSizes">Show all rooms over size specified below for building</label>
+			<input type="text" class="form-group" id="roomsSizes"><br>
+
+			<label for="withinBuildingX">Show all rooms within specified meters of building and matching filters</label>
+			<input type="text" class="form-group" id="withinBuildingX">
+
+			</select>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+
+<div id="render">
+      <h3>Result</h3>
+</div>
+
+
+</section>
+
+</body>
+</html>

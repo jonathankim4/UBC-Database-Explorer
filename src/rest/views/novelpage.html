@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="./public/novelstyle.css">
+    <script src="./public/jquery-3.2.0.min.js"></script>
+    <script src="./public/bootstrap.min.js""></script>
+    <script src="./public/bootstrap.min.css""></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./public/main_novel.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4PByKwqdwh6akmNeqsZ8sV9AdJBSDWLY&callback=initMap"></script>
+
+    
+
+</head>
+
+<html>
+<body>
+
+<section>
+
+<div class="topnav" id="myTopnav">
+    <a href="javascript:history.back()">Go Back</a>
+  <a href="deezpage.html">Deez</a>
+</div>
+
+
+<form id = "googleMapQuery">
+    <div class = "form-group">
+
+
+        <h3><label for="roomsInBuilding">Plot which building on google maps</label></h3>
+        <select id='rooms_selecter'></select>​
+
+        <audio id="dank" src="./public/dank.mp3"></audio>
+        <button onclick="document.getElementById('dank').play()" type="submit" class="btn btn-primary">Submit</button>
+
+
+        <h3>Get Dat Google Map BRATATATA</h3>
+        <div id="map"></div>
+
+
+    </div>
+</form>
+
+<h3>Or get DAT route between 2 buildings from start to end</h3>
+
+<form id = "googleMapRoute">
+    <div class = "form-group">
+    <div id="panel">
+    <b> start</b> <select id='rooms_selecterstart'></select>
+    <b> end</b> <select id='rooms_selecterend'></select>
+
+    <audio id="dank" src="./public/dank.mp3"></audio>
+    <button onclick="document.getElementById('dank').play()" type="submit" class="btn btn-primary">Submit</button>
+
+    </div>
+    </div>
+</form>
+
+<div id="directions" style="width:300px;height:1500px;float:left;color:white"></div>
+<br>
+
+
+
+<div id="container">
+    <form id="queryFormDank">
+        <div class="form-group">
+            <h3><label for="roomsInBuilding">get the dankest courses</label></h3>
+
+        </div>
+
+        <audio id="dank" src="./public/dank.mp3"></audio>
+        <button onclick="document.getElementById('dank').play()" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div id="render">
+      <h3>Result</h3>
+</div>
+
+
+</section>
+
+</body>
+</html>
